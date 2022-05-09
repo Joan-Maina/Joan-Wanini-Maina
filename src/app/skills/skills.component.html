@@ -1,0 +1,10 @@
+<div
+  class="w-3/4 flex flex-wrap gap-4 justify-evenly text-white ml-[10%] mt-60 md:-mt-10"
+>
+  <div
+    *ngFor="let skill of skills"
+    class="border-2 border-r-slate-50 p-2 w-fit rounded-md hover:scale-95"
+  >
+    <p>{{ skill.name }} - {{ skill.experience }}</p>
+  </div>
+</div>

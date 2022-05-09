@@ -16,7 +16,6 @@ export class FooterComponent implements OnInit {
   // public whatsapp:string = "https://wa.me/254712632595";
 
   towhatsapp(url:string){
-    console.log(url)
     window.location.href = url;
   }
 }
