@@ -14,48 +14,45 @@ export class SkillsComponent implements OnInit {
 
   skills = [
     {
-      name:"HTML",
-      experience:"1 year"
+      name:"HTML"
     },
     {
-      name:"CSS",
-      experience:"1 year"
+      name:"CSS"
     },
     {
-      name:"javascript",
-      experience:"1 year"
+      name:"Javascript"
     },
     {
-      name:"Typescript",
-      experience:"1 year"
+      name:"Typescript"
     },
     {
-      name:"React",
-      experience:"1 year"
+      name:"React"
     },
     {
-      name:"Angular",
-      experience:"1 year"
+      name:"Angular"
     },
     {
-      name:"Node",
-      experience:"1 year"
+      name:"Node"
     },
     {
-      name:"SQL",
-      experience:"1 year"
+      name:"SQL"
     },
     {
-      name:"Python",
-      experience:"1 year"
+      name:"Python"
     },
     {
-      name:"MongoDB",
-      experience:"1 year"
+      name:"MongoDB"
     },
     {
-      name:"java",
-      experience:"1 year"
-    }
+      name:"Java"
+    },
+    {
+      name:"Kafka"
+    },
+    {
+      name:"Docker"
+    },
+    {name:"Cypress"}
+    ,{name:"Selenium"}
   ]
 }

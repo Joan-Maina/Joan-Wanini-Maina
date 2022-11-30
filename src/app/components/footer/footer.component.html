@@ -1,7 +1,7 @@
 <div
-  class="h-16 w-full flex justify-evenly p-2 items-center shadow-md shadow-black"
+  class="h-16 w-full bottom-0 flex justify-evenly p-2 items-center shadow-md shadow-black"
 >
-  <a href="mailto:{{ email }}"
+  <a href="mailto:{{ email }}" class="hover:bg-sky-700"
     ><span
       class="iconify"
       data-icon="clarity:email-line"
@@ -13,7 +13,7 @@
   <!-- <mat-icon (click)="towhatsapp('https://wa.me/254712632595')"
     >whatsapp</mat-icon
   > -->
-  <div (click)="towhatsapp('https://wa.me/254712632595')">
+  <div (click)="towhatsapp('https://wa.me/254712632595')" class="hover:bg-sky-700">
     <span
       class="iconify"
       data-icon="ph:whatsapp-logo-thin"
@@ -23,7 +23,7 @@
     ></span>
   </div>
 
-  <p (click)="towhatsapp('https://twitter.com/MainaWanini')">
+  <p (click)="towhatsapp('https://twitter.com/MainaWanini')" class="hover:bg-sky-700">
     <span
       class="iconify mt-4"
       data-icon="arcticons:twitter"
@@ -33,7 +33,7 @@
     ></span>
   </p>
   <!-- <a href="mailto:{{email}}"><mat-icon>attach_email</mat-icon></a> -->
-  <div (click)="towhatsapp('https://github.com/Joan-Maina')">
+  <div (click)="towhatsapp('https://github.com/Joan-Maina')" class="hover:bg-sky-700">
     <span
       class="iconify"
       data-icon="akar-icons:github-fill"
@@ -43,5 +43,4 @@
     ></span>
   </div>
 
-  <!-- <i class="fa fa-id-badge fa-3x" aria-hidden="true"></i> -->
 </div>

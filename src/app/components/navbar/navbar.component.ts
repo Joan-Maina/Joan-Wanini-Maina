@@ -12,4 +12,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  condition = false;
+  displaysidebar(){
+    console.log(this.condition)
+   this.condition = !this.condition;
+  }
 }

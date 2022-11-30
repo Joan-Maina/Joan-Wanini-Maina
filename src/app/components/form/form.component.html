@@ -1,17 +1,17 @@
-<form action="" class="flex flex-col justify-evenly shadow-lg p-4 h-52">
-  <label for="name">Full names:</label>
-  <input
-    type="name"
-    id="name"
-    placeholder="Enter your name"
-    class="border-[1px] p-2"
-  />
-  <label for="message" class="">Email message:</label>
-  <input
-    type="text"
-    id="message"
-    placeholder="Enter message..."
-    class="border-[1px] p-2"
-  />
-  <button class="bg-black text-white w-fit p-2 rounded-md">SUBMIT</button>
-</form>
+<p>You can never get a cup of coffee large enough or a book long enough to suit me. I love reading and writing. Here are some articles I have worked on:</p>
+<div class="h-full flex justify-evenly">
+
+<div class="h-[200px] flex-col w-[150px]"     *ngFor="let article of articles"
+>
+<a href={{article.link}}>
+  <p>{{article.title}}</p>
+  <img
+    src={{article.image}}
+    alt="project"
+    class="object-cover h-full"
+    #tooltip="matTooltip"
+    matTooltip="Check out the project"
+    matTooltipPosition="right"
+/></a>
+</div>
+</div>

@@ -1,20 +1,49 @@
-<mat-icon class="text-white p-2 m-10 h-fit md:invisible md:h-0 md:w-0"
-  >menu</mat-icon
->
-<div
-  class="w-full flex justify-between px-40 top-0 items-center shadow-sm font-extrabold font-serif text-white mt-2 h-0 invisible md:-mt-10 md:visible"
->
-  <div class="">
-    <img
-      src="../../../assets//JOAN.png"
-      alt="Joan"
-      class="w-32 h-32 rounded-full border-none"
-    />
+<div>
+  <mat-icon
+    class="text-white p-2 m-10 h-fit md:invisible md:h-0 md:w-0"
+    (click)="displaysidebar()"
+    >menu</mat-icon
+  >
+  <div
+    class="w-full flex justify-between px-40 top-0 items-center shadow-sm font-extrabold font-serif text-white mt-2 h-0 invisible md:-mt-10 md:visible"
+  >
+    <div class="">
+      <img
+        src="../../../assets//JOAN.png"
+        alt="Joan"
+        class="w-32 h-32 rounded-full border-none"
+      />
+    </div>
+    <div class="w-96 flex flex-col justify-evenly md:flex-row">
+      <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+        <a href="#about-me">About me</a>
+      </p>
+      <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+        <a href="#projects">Projects</a>
+      </p>
+      <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+        <a href="#skills">Skills</a>
+      </p>
+      <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+        <a href="#contact-me">Contact me</a>
+      </p>
+    </div>
   </div>
-  <div class="w-96 flex justify-evenly">
-    <p class="hover:bg-slate-300 hover:text-black rounded-md p-2">Home</p>
-    <p class="hover:bg-slate-300 hover:text-black rounded-md p-2">About</p>
-    <p class="hover:bg-slate-300 hover:text-black rounded-md p-2">Projects</p>
-    <p class="hover:bg-slate-300 hover:text-black rounded-md p-2">Contact</p>
+  <div
+    class="w-0.25 flex flex-col md:invisible bg-white fixed bottom-0 h-5/6"
+    *ngIf="condition"
+  >
+    <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+      <a href="#about-me">About me</a>
+    </p>
+    <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+      <a href="#projects">Projects</a>
+    </p>
+    <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+      <a href="#skills">Skills</a>
+    </p>
+    <p class="hover:bg-slate-300 hover:text-white rounded-md p-2">
+      <a href="#contact-me">Contact me</a>
+    </p>
   </div>
 </div>
